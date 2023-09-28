@@ -1,0 +1,60 @@
+.wordInfoSec{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8rem;
+    flex-wrap: wrap;
+
+    hr{
+        width: 200px;
+        margin: 2rem 0;
+        
+    }
+
+    h2{
+        font-size: 2rem;
+        color: yellow;
+    }
+
+    h4{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: yellow;
+    }
+
+    li{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .mainUl{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .phoneticUl{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .definition{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .phoneticLi{
+            display: flex;
+            align-items: center;
+            
+            gap: 3rem;
+        }
+
+        .synonymsLi{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
