@@ -25,7 +25,13 @@ function App() {
   const fetchData = async (apiLink) => {
     const response = await fetch(apiLink);
     const data = await response.json();
-    setData(data);
+    
+    if (response.ok) {
+      setData(data);
+      setErrorMessage("");
+    } else {
+      setErrorMessage("Word not found. Please try a different word.");
+    }
   }
 
   //uppdaterar api-länken när användaren ändrar det sökta ordet
